@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: lightblue;
+}
+
+.social-icons {
+  position: fixed;
+  top: 35%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 9;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  background-color: #222;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ffff;
+  font-size: 20px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffff44;
+}
+
+.social-icons a:hover {
+  background-color: #00ffff;
+  color: black;
+  transform: scale(1.1);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 40px 80px;
+  min-height: 100vh;
+}
+
+.hero-content {
+  max-width: 50%;
+  padding-left: 80px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.hero-content h1 span {
+  color: lightblue;
+}
+
+.hero-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.hero-image img {
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffff88;
+  margin-right: 40px;
+}
+
+
+.about-section {
+  display: flex;
+  padding: 60px 40px;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-photo img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00ffff88;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: lightblue;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #111;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.tab-content {
+  display: none;
+  color: #ccc;
+}
+
+.tab-content.active {
+  display: block;
+}
