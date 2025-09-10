@@ -20,15 +20,3 @@ window.addEventListener("scroll", () => {
 });
 
 
-
-
-
-
-
-
-    const mobileMenuButton = document.querySelector('.hamburger-menu');
-    const navMenu = document.querySelector('.nav-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
