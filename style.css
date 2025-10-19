@@ -192,19 +192,3 @@ nav a:hover::after {
 .info-content.active {
   display: block;
 }
-
-
-
-/* Standard desktop styles here */
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Styles for screens smaller than 768px */
-@media only screen and (max-width: 768px) {
-  .container {
-    /* Stack elements vertically on mobile */
-    flex-direction: column;
-  }
-}
