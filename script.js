@@ -19,4 +19,12 @@ window.addEventListener("scroll", () => {
   socials.style.display = scrollY > introBottom ? "none" : "flex";
 });
 
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Message sent successfully!");
+  contactForm.reset();
+});
+
 
