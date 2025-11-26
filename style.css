@@ -194,10 +194,6 @@ nav a:hover::after {
 }
 
 
-
-
-
-
 /* ===============================
    MOBILE & TABLET RESPONSIVE
    =============================== */
@@ -296,4 +292,74 @@ nav a:hover::after {
     padding: 8px 14px;
     font-size: 14px;
   }
+}
+
+/* ===============================
+   CONTACT SECTION
+   =============================== */
+
+.contact-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: lightblue;
+  margin-bottom: 40px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  text-align: left;
+  font-size: 18px;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.contact-details i {
+  color: #00ffff;
+  margin-right: 10px;
+}
+
+.contact-form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00ffff;
+  background-color: #111;
+  color: white;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #00ffff;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.contact-form button:hover {
+  background-color: white;
 }
