@@ -27,4 +27,19 @@ contactForm.addEventListener("submit", function(e) {
   contactForm.reset();
 });
 
+// mobile menu toggle
+const menuButton = document.querySelector(".menu-btn");
+const navList = document.querySelector("nav ul");
 
+if (menuButton && navList) {
+  menuButton.addEventListener("click", () => {
+    navList.classList.toggle("open");
+  });
+
+  // hide menu when a link is clicked
+  navList.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navList.classList.remove("open");
+    });
+  });
+}
